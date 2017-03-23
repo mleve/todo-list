@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazing TO-DO List</title>
+    </head>
+    <body>
+        <h2>TO-DO List</h2>
+        <table>
+            <th>
+                <td>Tarea</td>
+            </th>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.text }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+    </body>
+</html>
