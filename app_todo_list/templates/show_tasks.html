@@ -5,6 +5,10 @@
     </head>
     <body>
         <h2>TO-DO List</h2>
+        <form action="/submit-task" method="POST"> {% csrf_token %}
+            <input type="text" name="text"/>
+            <input type="submit" value="Crear"/>
+        </form>
         <table>
             <th>
                 <td>Tarea</td>
@@ -15,6 +19,5 @@
             </tr>
             {% endfor %}
         </table>
-        
     </body>
 </html>

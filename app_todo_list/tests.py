@@ -35,6 +35,7 @@ class TaskTest(TestCase):
         
         #act
         response = client.get("/showtask")
+        
         #assert
         self.assertContains(response, "lavar el auto")
     
